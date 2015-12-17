@@ -1,0 +1,16 @@
+{
+  "AppSettings": {
+    "SiteTitle": "CA3X00073017",
+    "VehicleType": {
+      "Car": 2.00,
+      "PublicServiceVehicle": 2.00,
+      "Bus": 2.80,
+      "Goods": 4.10
+    }
+  },
+  "Data": {
+    "DefaultConnection": {
+      "ConnectionString": "Server=(localdb)\\mssqllocaldb;Database=aspnet5-CA3X00073017-7a92e6c8-ae3d-47f9-b471-ea2a55cb492e;Trusted_Connection=True;MultipleActiveResultSets=true"
+    }
+  }
+}

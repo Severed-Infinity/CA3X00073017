@@ -1,0 +1,45 @@
+﻿@model CA3X00073017.Models.Vehicle
+
+@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewBag.Title = "Toll Calculator";
+}
+
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true)
+    <fieldset>
+        <legend>Calulate Your Toll</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.VehicleType)
+        </div>
+        <div class="editor-field">
+           <span>Due to error with enum list a num value is displayed instead</span>
+            <br />
+           @Html.DropDownListFor(model => model.VehicleType, Enumerable.Range(0, 4).Select(i => new SelectListItem { Text = i.ToString(), Value = i.ToString() }))
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ElectronicTag)
+        </div>
+        <div class="editor-field">
+            @Html.CheckBoxFor(model => model.ElectronicTag)
+        </div>
+
+        <div>
+            <input type="submit" value="TollCalculate" /> 
+        </div>
+
+        <br />
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Toll)
+        </div>
+        <div class="editor-field">
+            @Html.ValueFor(model => model.Toll)
+        </div>
+    </fieldset>
+
+}

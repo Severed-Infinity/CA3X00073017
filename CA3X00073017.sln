@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{9240801E-A2F9-4A48-BC4D-04EA91F20191}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{EC93CE8E-D4C9-4D31-83D9-8B6943E5D422}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "CA3X00073017", "src\CA3X00073017\CA3X00073017.xproj", "{24829D79-25A2-46F3-863D-D747FC6A6F53}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{744F9A72-59DB-496D-AB27-A93D67B2B1DA}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\AzureVMPublishModule.psm1 = PublishScripts\AzureVMPublishModule.psm1
+		PublishScripts\Publish-WebApplicationVM.ps1 = PublishScripts\Publish-WebApplicationVM.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configurations", "{DD391C4B-6249-4615-B870-7304C5BAF3BC}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Configurations\CA3X00073017-WAWS-dev.json = PublishScripts\Configurations\CA3X00073017-WAWS-dev.json
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CA3X00073017UnitTest", "CA3X00073017UnitTest\CA3X00073017UnitTest.csproj", "{87410A4A-1130-4C58-BB78-30350D8FCDAC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{24829D79-25A2-46F3-863D-D747FC6A6F53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24829D79-25A2-46F3-863D-D747FC6A6F53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24829D79-25A2-46F3-863D-D747FC6A6F53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24829D79-25A2-46F3-863D-D747FC6A6F53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87410A4A-1130-4C58-BB78-30350D8FCDAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87410A4A-1130-4C58-BB78-30350D8FCDAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87410A4A-1130-4C58-BB78-30350D8FCDAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87410A4A-1130-4C58-BB78-30350D8FCDAC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{24829D79-25A2-46F3-863D-D747FC6A6F53} = {9240801E-A2F9-4A48-BC4D-04EA91F20191}
+		{DD391C4B-6249-4615-B870-7304C5BAF3BC} = {744F9A72-59DB-496D-AB27-A93D67B2B1DA}
+	EndGlobalSection
+EndGlobal
